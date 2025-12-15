@@ -44,6 +44,54 @@
             text-align: center;
 
         }
+        /* ---------- Desktop (large screens) ---------- */
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: 300px 300px 300px;
+        justify-content: center;
+    }
+}
+
+/* ---------- Tablet (medium screens) ---------- */
+@media (max-width: 1024px) and (min-width: 601px) {
+    .grid-container {
+        grid-template-columns: 300px 300px;
+        justify-content: center;
+    }
+
+    .grid-item {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ---------- Mobile (small screens) ---------- */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .grid-item {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
     </style>
 </head>
 
@@ -148,5 +196,6 @@
 
 
 </body>
+
 
 </html>
